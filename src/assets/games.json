@@ -1,0 +1,304 @@
+[
+  {
+    "id": 1,
+    "title": "Final Fantasy",
+    "console": "NES",
+    "year": 1987,
+    "rating": 9.0,
+    "image": "/images/ff1.jpg",
+    "description": "Primer juego de la saga Final Fantasy",
+    "link": "https://gamefaqs.gamespot.com/nes/563433-final-fantasy"
+  },
+  {
+    "id": 2,
+    "title": "Dragon Quest",
+    "console": "NES",
+    "year": 1986,
+    "rating": 9.2,
+    "image": "/images/DQ1.jpg",
+    "description": "Primer Dragon Quest, clásico JRPG de NES",
+    "link": "https://gamefaqs.gamespot.com/nes/563434-dragon-quest"
+  },
+  {
+    "id": 3,
+    "title": "Dragon Quest II",
+    "console": "NES",
+    "year": 1987,
+    "rating": 9.1,
+    "image": "/images/DQ2.jpg",
+    "description": "Segunda entrega de Dragon Quest",
+    "link": "https://gamefaqs.gamespot.com/nes/563435-dragon-quest-ii"
+  },
+  {
+    "id": 4,
+    "title": "Dragon Quest III",
+    "console": "NES",
+    "year": 1988,
+    "rating": 9.4,
+    "image": "/images/DQ3.jpg",
+    "description": "Tercera entrega de Dragon Quest, muy aclamada",
+    "link": "https://gamefaqs.gamespot.com/nes/563436-dragon-quest-iii"
+  },
+  {
+    "id": 5,
+    "title": "Crystalis",
+    "console": "NES",
+    "year": 1990,
+    "rating": 8.9,
+    "image": "/images/crystalis.jpg",
+    "description": "Aventura de acción con elementos RPG",
+    "link": "https://gamefaqs.gamespot.com/nes/563437-crystalis"
+  },
+  {
+    "id": 6,
+    "title": "Fire Emblem: Shadow Dragon and the Blade of Light",
+    "console": "NES",
+    "year": 1990,
+    "rating": 9.0,
+    "image": "/images/Fire Emblem Shadow Dragon and the Blade of Light.jpg",
+    "description": "Primer Fire Emblem, clásico táctico",
+    "link": "https://gamefaqs.gamespot.com/nes/563438-fire-emblem-shadow-dragon"
+  },
+  {
+    "id": 7,
+    "title": "Ultima IV: Quest of the Avatar",
+    "console": "NES",
+    "year": 1987,
+    "rating": 8.8,
+    "image": "/images/Ultima IV Quest of the Avatar.jpg",
+    "description": "RPG pionero en moral y decisiones",
+    "link": "https://gamefaqs.gamespot.com/nes/563439-ultima-iv-quest-of-the-avatar"
+  },
+  {
+    "id": 8,
+    "title": "Wizards & Warriors",
+    "console": "NES",
+    "year": 1987,
+    "rating": 8.7,
+    "image": "/images/Wizards & Warriors.jpg",
+    "description": "Aventura y acción con elementos RPG",
+    "link": "https://gamefaqs.gamespot.com/nes/563440-wizards-warriors"
+  },
+  {
+    "id": 9,
+    "title": "Shadowgate",
+    "console": "NES",
+    "year": 1989,
+    "rating": 8.6,
+    "image": "/images/shadowgate.jpg",
+    "description": "Clásico juego de aventura y puzzles",
+    "link": "https://gamefaqs.gamespot.com/nes/563441-shadowgate"
+  },
+  {
+    "id": 10,
+    "title": "Final Fantasy II",
+    "console": "NES",
+    "year": 1988,
+    "rating": 9.1,
+    "image": "/images/Final Fantasy II.jpg",
+    "description": "Segunda entrega de Final Fantasy",
+    "link": "https://gamefaqs.gamespot.com/nes/563442-final-fantasy-ii"
+  },
+  {
+    "id": 11,
+    "title": "Chrono Trigger",
+    "console": "SNES",
+    "year": 1995,
+    "rating": 9.8,
+    "image": "/images/chrono.jpg",
+    "description": "Clásico JRPG de SNES con viajes en el tiempo",
+    "link": "https://gamefaqs.gamespot.com/snes/563443-chrono-trigger"
+  },
+  {
+    "id": 12,
+    "title": "Final Fantasy IV",
+    "console": "SNES",
+    "year": 1991,
+    "rating": 9.4,
+    "image": "/images/ff4.jpg",
+    "description": "Primer Final Fantasy de SNES",
+    "link": "https://gamefaqs.gamespot.com/snes/563444-final-fantasy-iv"
+  },
+  {
+    "id": 13,
+    "title": "Final Fantasy V",
+    "console": "SNES",
+    "year": 1992,
+    "rating": 9.3,
+    "image": "/images/ff5.jpg",
+    "description": "Continuación de la saga en SNES",
+    "link": "https://gamefaqs.gamespot.com/snes/563445-final-fantasy-v"
+  },
+  {
+    "id": 14,
+    "title": "Final Fantasy VI",
+    "console": "SNES",
+    "year": 1994,
+    "rating": 9.6,
+    "image": "/images/ff6.jpg",
+    "description": "Uno de los mejores JRPGs de la SNES",
+    "link": "https://gamefaqs.gamespot.com/snes/563446-final-fantasy-vi"
+  },
+  {
+    "id": 15,
+    "title": "Secret of Mana",
+    "console": "SNES",
+    "year": 1993,
+    "rating": 9.2,
+    "image": "/images/secret of mana.jpg",
+    "description": "Aventura de acción RPG cooperativo",
+    "link": "https://gamefaqs.gamespot.com/snes/563447-secret-of-mana"
+  },
+  {
+    "id": 16,
+    "title": "EarthBound",
+    "console": "SNES",
+    "year": 1994,
+    "rating": 9.5,
+    "image": "/images/earthbound.jpg",
+    "description": "RPG contemporáneo con humor y estilo único",
+    "link": "https://gamefaqs.gamespot.com/snes/563448-earthbound"
+  },
+  {
+    "id": 17,
+    "title": "Lufia II: Rise of the Sinistrals",
+    "console": "SNES",
+    "year": 1995,
+    "rating": 9.1,
+    "image": "/images/lufia 2.jpg",
+    "description": "Clásico JRPG con mazmorras y puzzles",
+    "link": "https://gamefaqs.gamespot.com/snes/563449-lufia-ii-rise-of-the-sinistrals"
+  },
+  {
+    "id": 18,
+    "title": "Tales of Phantasia",
+    "console": "SNES",
+    "year": 1995,
+    "rating": 9.0,
+    "image": "/images/tales of phantasia.jpg",
+    "description": "JRPG con historia épica y combate en tiempo real",
+    "link": "https://gamefaqs.gamespot.com/snes/563450-tales-of-phantasia"
+  },
+  {
+    "id": 19,
+    "title": "Breath of Fire II",
+    "console": "SNES",
+    "year": 1994,
+    "rating": 9.2,
+    "image": "/images/BoF2.jpg",
+    "description": "JRPG con dragones y habilidades mágicas",
+    "link": "https://gamefaqs.gamespot.com/snes/563451-breath-of-fire-ii"
+  },
+  {
+    "id": 20,
+    "title": "Star Ocean",
+    "console": "SNES",
+    "year": 1996,
+    "rating": 9.1,
+    "image": "/images/star ocean.jpg",
+    "description": "JRPG de ciencia ficción para SNES",
+    "link": "https://gamefaqs.gamespot.com/snes/563452-star-ocean"
+  },
+  {
+    "id": 21,
+    "title": "Final Fantasy VII",
+    "console": "PS1",
+    "year": 1997,
+    "rating": 9.8,
+    "image": "/images/ff7.jpg",
+    "description": "Primer Final Fantasy 3D",
+    "link": "https://gamefaqs.gamespot.com/ps1/197342-final-fantasy-vii"
+  },
+  {
+    "id": 22,
+    "title": "Final Fantasy VIII",
+    "console": "PS1",
+    "year": 1999,
+    "rating": 9.4,
+    "image": "/images/ff8.jpg",
+    "description": "JRPG con historia romántica y gran mundo",
+    "link": "https://gamefaqs.gamespot.com/ps1/197343-final-fantasy-viii"
+  },
+  {
+    "id": 23,
+    "title": "Final Fantasy IX",
+    "console": "PS1",
+    "year": 2000,
+    "rating": 9.3,
+    "image": "/images/ff9.jpg",
+    "description": "Último Final Fantasy de PS1",
+    "link": "https://gamefaqs.gamespot.com/ps1/197344-final-fantasy-ix"
+  },
+  {
+    "id": 24,
+    "title": "Suikoden",
+    "console": "PS1",
+    "year": 1995,
+    "rating": 9.2,
+    "image": "/images/suikoden.jpg",
+    "description": "Clásico JRPG de PS1 con múltiples personajes",
+    "link": "https://gamefaqs.gamespot.com/ps1/197345-suikoden"
+  },
+  {
+    "id": 25,
+    "title": "Suikoden II",
+    "console": "PS1",
+    "year": 1998,
+    "rating": 9.5,
+    "image": "/images/suikoden 2.jpg",
+    "description": "Secuela de Suikoden con historia épica",
+    "link": "https://gamefaqs.gamespot.com/ps1/197346-suikoden-ii"
+  },
+  {
+    "id": 26,
+    "title": "Chrono Cross",
+    "console": "PS1",
+    "year": 1999,
+    "rating": 9.7,
+    "image": "/images/chrono cross.jpg",
+    "description": "Secuela espiritual de Chrono Trigger",
+    "link": "https://gamefaqs.gamespot.com/ps1/197347-chrono-cross"
+  },
+  {
+    "id": 27,
+    "title": "Vagrant Story",
+    "console": "PS1",
+    "year": 2000,
+    "rating": 9.4,
+    "image": "/images/vagrant.jpg",
+    "description": "RPG de acción y puzzles complejos",
+    "link": "https://gamefaqs.gamespot.com/ps1/197348-vagrant-story"
+  },
+  {
+    "id": 28,
+    "title": "Xenogears",
+    "console": "PS1",
+    "year": 1998,
+    "rating": 9.6,
+    "image": "/images/xenogears.jpg",
+    "description": "RPG de mechas con historia profunda",
+    "link": "https://gamefaqs.gamespot.com/ps1/197349-xenogears"
+  },
+  {
+    "id": 29,
+    "title": "Tales of Destiny",
+    "console": "PS1",
+    "year": 1997,
+    "rating": 9.0,
+    "image": "/images/tales of destiny.jpg",
+    "description": "JRPG clásico de PS1",
+    "link": "https://gamefaqs.gamespot.com/ps1/197350-tales-of-destiny"
+  },
+  {
+    "id": 30,
+    "title": "Wild Arms",
+    "console": "PS1",
+    "year": 1997,
+    "rating": 9.1,
+    "image": "/images/wild arms.jpg",
+    "description": "JRPG de PS1 con temática western",
+    "link": "https://gamefaqs.gamespot.com/ps1/197351-wild-arms"
+  }
+]
+
+
