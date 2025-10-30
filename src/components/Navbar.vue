@@ -10,7 +10,9 @@
       <li><router-link to="/">Inicio</router-link></li>
       <li><router-link to="/games">Juegos Clásicos</router-link></li>
       <li><router-link to="/modern-games">Juegos Modernos</router-link></li>
+      <li><router-link to="/currently-playing">Actualmente Jugando</router-link></li> 
       <li><router-link to="/about">Acerca de</router-link></li>
+      
     </ul>
   </nav>
 </template>
@@ -50,7 +52,6 @@ const toggleMenu = () => {
   cursor: pointer;
 }
 
-
 .navbar ul {
   list-style: none;
   display: flex;
@@ -69,7 +70,8 @@ const toggleMenu = () => {
   transition: color 0.3s;
 }
 
-.navbar a:hover {
+.navbar a:hover,
+.router-link-active {
   color: #ff6600;
 }
 
@@ -100,6 +102,7 @@ const toggleMenu = () => {
   }
 }
 </style>
+
 
 
 
