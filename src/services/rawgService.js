@@ -6,7 +6,7 @@ const api = axios.create({
   params: { key: API_KEY }
 })
 
-// Intenta enriquecer un juego, si no existe devuelve null
+
 export async function enrichGame(gameName) {
   try {
     const response = await api.get('/games', {

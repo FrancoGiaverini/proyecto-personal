@@ -1,4 +1,4 @@
-<template>
+<template> 
   <div class="games-page">
     <div class="console-buttons">
       <button 
@@ -47,7 +47,7 @@ const filteredGames = computed(() => {
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
-  margin-bottom: 1rem; /* Separa los botones de las cards */
+  margin-bottom: 1rem; 
 }
 
 .console-buttons button {
@@ -69,6 +69,13 @@ const filteredGames = computed(() => {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
   gap: 1rem;
-  margin-top: 0.5rem; /* Espacio extra arriba de la grilla */
+  margin-top: 0.5rem; 
+}
+
+.games-grid img {
+  max-height: 150px;
+  width: auto;
+  object-fit: contain;
 }
 </style>
+

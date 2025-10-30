@@ -2,52 +2,45 @@
   <div class="modern-games-page">
     <h2>Juegos Modernos</h2>
 
-    <div v-if="loading" class="loading">
+    <button @click="loadGames" class="load-btn">
+      Cargar Juegos Modernos
+    </button>
+
+    <div v-if="gamesStore.loading" class="loading">
       Cargando juegos modernos...
     </div>
 
     <div v-else class="games-grid">
       <GameCard 
-        v-for="game in games" 
+        v-for="game in gamesStore.games" 
         :key="game.id" 
         :game="formatGame(game)" 
       />
     </div>
 
-    <div v-if="error" class="error">
-      {{ error }}
+    <div v-if="gamesStore.error" class="error">
+      {{ gamesStore.error }}
     </div>
   </div>
 </template>
 
 <script setup>
-import { ref, onMounted } from 'vue'
+import { useGamesStore } from '../stores/gamesStore.js'
+import { onMounted } from 'vue'
 import GameCard from '../components/GameCard.vue'
 
-const API_KEY = '99c8650ecbd845009e978527d576406c'
-const games = ref([])
-const loading = ref(true)
-const error = ref(null)
+const gamesStore = useGamesStore()
 
-onMounted(async () => {
-  try {
-    const res = await fetch(`https://api.rawg.io/api/games?key=${API_KEY}&dates=2020-01-01,2025-12-31&ordering=-rating&page_size=30`)
-    
-    if (!res.ok) {
-      throw new Error(`HTTP ${res.status} - ${res.statusText}`)
-    }
 
-    const data = await res.json()
-    games.value = data.results
-  } catch (err) {
-    console.error('Error al cargar los juegos modernos:', err)
-    error.value = 'No se pudieron cargar los juegos modernos. Es posible que haya un problema de CORS o de API.'
-  } finally {
-    loading.value = false
-  }
+onMounted(() => {
+  
 })
 
-// Formatea los datos de RAWG para usar tu modelo de GameCard
+const loadGames = () => {
+  gamesStore.fetchGames()
+}
+
+
 const formatGame = (game) => ({
   title: game.name,
   console: game.platforms?.map(p => p.platform.name).join(', ') || 'Varios',
@@ -67,16 +60,39 @@ const formatGame = (game) => ({
   padding: 1rem;
 }
 
+.load-btn {
+  background-color: #ff6600;
+  color: #fff;
+  border: none;
+  padding: 0.4rem 0.8rem;
+  font-size: 0.9rem;       
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.load-btn:hover {
+  background-color: #e55a00;
+}
+
 .loading,
 .error {
   text-align: center;
-  color: #ff6600;
   font-weight: bold;
+  color: #ff6600;
 }
 
 .games-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
   gap: 1rem;
+}
+
+
+@media (max-width: 400px) {
+  .load-btn {
+    padding: 0.3rem 0.6rem;
+    font-size: 0.8rem;
+  }
 }
 </style>

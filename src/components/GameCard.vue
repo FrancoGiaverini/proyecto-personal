@@ -69,8 +69,8 @@ const flipped = ref(false)
 
 .card-front img {
   width: 90%;
-  height: 150px; /* Limita la altura para que no llegue a los botones */
-  object-fit: contain; /* Mantiene proporción de la imagen */
+  height: 150px; 
+  object-fit: contain; 
   border-radius: 5px;
   margin-bottom: 0.5rem;
 }

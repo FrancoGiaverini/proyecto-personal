@@ -5,9 +5,9 @@ const cors = require('cors')
 const app = express()
 const PORT = 5000
 
-app.use(cors()) // Permite que el frontend en localhost acceda
+app.use(cors()) 
 
-// Tu API key de RAWG
+
 const RAWG_API_KEY = '99c8650ecbd845009e978527d576406c'
 
 app.get('/api/games', async (req, res) => {
@@ -20,7 +20,7 @@ app.get('/api/games', async (req, res) => {
         page_size: 30
       }
     })
-    res.json(data) // Devuelve los juegos al frontend
+    res.json(data) 
   } catch (error) {
     console.error('Error fetching RAWG API:', error.message)
     res.status(500).json({ error: 'No se pudieron cargar los juegos modernos.' })
