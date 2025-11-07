@@ -13,7 +13,7 @@
     <div v-else class="games-grid">
       <GameCard 
         v-for="game in gamesStore.games" 
-        :key="game.id" 
+        :key="game.id || game.slug" 
         :game="formatGame(game)" 
       />
     </div>
@@ -31,9 +31,8 @@ import GameCard from '../components/GameCard.vue'
 
 const gamesStore = useGamesStore()
 
-
 onMounted(() => {
-  
+ 
 })
 
 const loadGames = () => {
@@ -42,14 +41,14 @@ const loadGames = () => {
 
 
 const formatGame = (game) => ({
-  title: game.name,
-  console: game.platforms?.map(p => p.platform.name).join(', ') || 'Varios',
-  year: game.released?.split('-')[0] || 'Desconocido',
-  rating: game.rating || 'N/A',
-  description: game.slug,
-  image: game.background_image || 'https://via.placeholder.com/220x300?text=No+Image',
-  link: `https://www.google.com/search?q=${encodeURIComponent(game.name + ' guía')}`
-})
+  title: game.title,
+  console: game.platform || 'Varios',
+  year: game.release_date?.split('-')[0] || 'Desconocido',
+  rating: game.publisher || 'N/A',
+  description: game.short_description,
+  image: game.thumbnail || 'https://via.placeholder.com/220x300?text=No+Image',
+  link: game.game_url || '#'
+});
 </script>
 
 <style scoped>
@@ -87,7 +86,6 @@ const formatGame = (game) => ({
   grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
   gap: 1rem;
 }
-
 
 @media (max-width: 400px) {
   .load-btn {

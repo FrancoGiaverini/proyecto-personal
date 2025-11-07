@@ -1,5 +1,5 @@
-import { defineStore } from 'pinia'
-import axios from 'axios'
+import { defineStore } from 'pinia';
+import axios from 'axios';
 
 export const useGamesStore = defineStore('gamesStore', {
   state: () => ({
@@ -9,18 +9,25 @@ export const useGamesStore = defineStore('gamesStore', {
   }),
   actions: {
     async fetchGames() {
-      this.loading = true
-      this.error = null
+      this.loading = true;
+      this.error = null;
+
+     
+      const API_URL = import.meta.env.PROD
+        ? 'https://us-central1-proyectofinalfrancogiaverini.cloudfunctions.net/api/games'
+        : 'http://127.0.0.1:5001/proyectofinalfrancogiaverini/us-central1/api/games';
+
       try {
-        const res = await axios.get('http://localhost:5000/api/games')
-        this.games = res.data.results 
+        const res = await axios.get(API_URL);
+        this.games = res.data; 
       } catch (err) {
-        console.error('Error al cargar juegos desde el backend:', err)
-        this.error = 'No se pudieron obtener los juegos modernos.'
+        console.error('Error al cargar juegos desde FreeToGame:', err);
+        this.error = 'No se pudieron obtener los juegos modernos.';
       } finally {
-        this.loading = false
+        this.loading = false;
       }
     }
   }
-})
+});
+
 

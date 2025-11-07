@@ -1,5 +1,32 @@
-# Vue 3 + Vite
+# RetroGamesDB - Proyecto Final
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+Proyecto web de videojuegos retro y modernos. Contiene un catálogo de juegos, cards con información y la opción de agregar juegos a la lista "Actualmente Jugando".
 
-Learn more about IDE Support for Vue in the [Vue Docs Scaling up Guide](https://vuejs.org/guide/scaling-up/tooling.html#ide-support).
+---
+
+## Cómo revisar el proyecto
+
+### 1️⃣ Ver el código fuente
+- Accede al repositorio:  
+  [https://github.com/FrancoGiaverini/proyecto-personal](https://github.com/FrancoGiaverini/proyecto-personal)  
+- Explora las carpetas `src`, `components`, `pages` y `stores` para revisar el código.
+
+### 2️⃣ Ver la página en funcionamiento
+- Abre la versión desplegada en Firebase Hosting:  
+  [https://proyectofinalfrancogiaverini.web.app](https://proyectofinalfrancogiaverini.web.app)  
+- Navega por las secciones: Inicio, Juegos Clásicos, Juegos Modernos, Actualmente Jugando y Acerca de.
+
+### 3️⃣ Ejecutar localmente (opcional)
+1. Clona el repositorio:
+   ```bash
+   git clone https://github.com/FrancoGiaverini/proyecto-personal.git
+
+instala dependencias:
+cd proyecto-personal
+npm install
+
+Ejecuta el servidor de desarrollo:
+
+npm run dev
+
+Abre la URL que muestra la consola (normalmente http://localhost:5173) para probar el proyecto en tu máquina.

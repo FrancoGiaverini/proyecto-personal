@@ -16,7 +16,6 @@
 </template>
 
 <script setup>
-
 </script>
 
 <style scoped>
@@ -36,6 +35,7 @@
   align-items: center;
   justify-content: center;
   border-bottom: 3px solid #ff6600;
+  padding-top: 80px;
 }
 
 .overlay {
@@ -59,7 +59,6 @@
   line-height: 1.5;
   text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
 }
-
 
 .buttons {
   display: flex;
@@ -90,7 +89,6 @@
 .btn-secondary:hover {
   background-color: #555;
 }
-
 
 @media (max-width: 768px) {
   .hero {

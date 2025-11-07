@@ -31,7 +31,6 @@ function addToCurrentlyPlaying() {
     completed: []
   }
 
-  
   const alreadyExists = Object.values(stored).some(arr =>
     arr.some(g => g.title === props.game.title)
   )
@@ -54,6 +53,7 @@ function addToCurrentlyPlaying() {
   height: 340px;
   cursor: pointer;
   position: relative;
+  z-index: 1; 
 }
 
 .card-inner {
@@ -92,8 +92,8 @@ function addToCurrentlyPlaying() {
 
 .card-front img {
   width: 90%;
-  height: 150px; 
-  object-fit: contain; 
+  height: 150px;
+  object-fit: contain;
   border-radius: 5px;
   margin-bottom: 0.5rem;
 }
@@ -129,3 +129,4 @@ function addToCurrentlyPlaying() {
   display: inline-block;
 }
 </style>
+

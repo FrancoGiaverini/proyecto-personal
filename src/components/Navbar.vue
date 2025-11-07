@@ -10,9 +10,8 @@
       <li><router-link to="/">Inicio</router-link></li>
       <li><router-link to="/games">Juegos Clásicos</router-link></li>
       <li><router-link to="/modern-games">Juegos Modernos</router-link></li>
-      <li><router-link to="/currently-playing">Actualmente Jugando</router-link></li> 
+      <li><router-link to="/currently-playing">Actualmente Jugando</router-link></li>
       <li><router-link to="/about">Acerca de</router-link></li>
-      
     </ul>
   </nav>
 </template>
@@ -32,7 +31,11 @@ const toggleMenu = () => {
   align-items: center;
   padding: 1rem 2rem;
   background-color: #111;
-  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
 }
 
 .navbar h1 {
@@ -81,8 +84,8 @@ const toggleMenu = () => {
   }
 
   .navbar ul {
-    position: absolute;
-    top: 100%;
+    position: fixed;
+    top: 60px;
     right: 0;
     background-color: #111;
     flex-direction: column;
@@ -91,10 +94,11 @@ const toggleMenu = () => {
     overflow: hidden;
     transition: max-height 0.3s ease;
     border-radius: 0 0 10px 10px;
+    z-index: 9999;
   }
 
   .navbar ul.open {
-    max-height: 500px; 
+    max-height: 500px;
   }
 
   .navbar li {
@@ -102,6 +106,12 @@ const toggleMenu = () => {
   }
 }
 </style>
+
+
+
+
+
+
 
 
 
